@@ -1,0 +1,1202 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+<!-- ===================================================== -->
+<!-- CAROUSEL PRINCIPAL -->
+<!-- ===================================================== -->
+
+<div id="carouselExample"
+     class="carousel slide carousel-fade mb-5"
+     data-bs-ride="carousel">
+
+
+    <!-- INDICADORES -->
+
+    <div class="carousel-indicators">
+
+        <button type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="0"
+                class="active">
+        </button>
+
+        <button type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="1">
+        </button>
+
+        <button type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="2">
+        </button>
+
+    </div>
+
+
+
+    <!-- IMAGENES -->
+
+    <div class="carousel-inner">
+
+
+        <!-- IMAGEN 1 -->
+
+        <div class="carousel-item active">
+
+            <img src="{% static 'img/stepp.png' %}"
+                 class="d-block w-100 carousel-img">
+
+        </div>
+
+
+
+        <!-- IMAGEN 2 -->
+
+        <div class="carousel-item">
+
+            <img src="{% static 'img/industrial.jpg' %}"
+                 class="d-block w-100 carousel-img">
+
+        </div>
+
+
+
+        <!-- IMAGEN 3 -->
+
+        <div class="carousel-item">
+
+            <img src="{% static 'img/electricidad.jpg' %}"
+                 class="d-block w-100 carousel-img">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FLECHAS -->
+
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+
+
+
+
+<!-- ===================================================== -->
+<!-- QUIENES SOMOS -->
+<!-- ===================================================== -->
+
+<section class="container my-5 py-5">
+
+    <div class="row align-items-center g-5">
+
+
+        <!-- ===================================================== -->
+        <!-- IMAGEN -->
+        <!-- ===================================================== -->
+
+        <div class="col-md-5 text-center">
+
+            <img src="{% static 'img/equipo.png' %}"
+                 class="img-fluid shadow imagen-nosotros">
+
+        </div>
+
+
+
+        <!-- ===================================================== -->
+        <!-- TEXTO -->
+        <!-- ===================================================== -->
+
+        <div class="col-md-7">
+
+
+            <!-- TITULO -->
+
+            <h2 class="fw-bold mb-4 titulo-seccion">
+
+                ¿Quiénes somos?
+
+            </h2>
+
+
+
+            <!-- PARRAFO 1 -->
+
+            <p class="text-muted texto-nosotros">
+
+                STEP es una empresa especializada en servicios
+                técnicos, electromecánicos e industriales,
+                constituida en 2011 y enfocada en ofrecer
+                soluciones integrales para empresas en todo México.
+
+            </p>
+
+
+
+            <!-- PARRAFO 2 -->
+
+            <p class="text-muted texto-nosotros">
+
+                Nos especializamos en mantenimiento industrial,
+                automatización, instalaciones eléctricas y
+                servicios técnicos especializados para diferentes
+                plantas industriales de la República Mexicana.
+
+            </p>
+
+
+
+            <!-- BOTON -->
+
+            <a href="#servicios"
+               class="btn btn-primary btn-lg mt-3 px-4">
+
+                Ver servicios
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ===================================================== -->
+<!-- MISION Y VISION -->
+<!-- ===================================================== -->
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+
+        <!-- MISION -->
+
+        <div class="col-md-6">
+
+            <div class="card shadow border-0 h-100 p-4">
+
+                <h3 class="fw-bold mb-3">
+
+                    Nuestra misión
+
+                </h3>
+
+
+                <p class="text-muted">
+
+                    Lograr el éxito de nuestros clientes ofreciendo
+                    servicios de administración y ejecución de
+                    proyectos especializados, manteniendo siempre
+                    calidad, seguridad y compromiso.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- VISION -->
+
+        <div class="col-md-6">
+
+            <div class="card shadow border-0 h-100 p-4">
+
+                <h3 class="fw-bold mb-3">
+
+                    Nuestra visión
+
+                </h3>
+
+
+                <p class="text-muted">
+
+                    Ser una empresa capaz de mantener un crecimiento
+                    firme mediante el desarrollo integral de nuestro
+                    personal y el uso de tecnología especializada
+                    para cumplir con los compromisos adquiridos con
+                    nuestros clientes.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===================================================== -->
+<!-- SERVICIOS -->
+<!-- ===================================================== -->
+
+<section id="servicios"
+         class="container my-5">
+
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+
+            Nuestros servicios
+
+        </h2>
+
+
+        <p class="text-muted">
+
+            Soluciones industriales y electromecánicas
+            especializadas.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="row g-4">
+
+
+        <!-- SERVICIO 1 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <img src="{% static 'img/electricidad.jpg' %}"
+                     class="card-img-top"
+                     style="height:250px;
+                            object-fit:cover;">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Instalaciones eléctricas
+
+                    </h5>
+
+
+                    <p class="text-muted">
+
+                        Cableado industrial, tableros eléctricos,
+                        alumbrado, subestaciones y mantenimiento.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICIO 2 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <img src="{% static 'img/industrial.jpg' %}"
+                     class="card-img-top"
+                     style="height:250px;
+                            object-fit:cover;">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Mantenimiento industrial
+
+                    </h5>
+
+
+                    <p class="text-muted">
+
+                        Reparación, supervisión y mantenimiento
+                        preventivo y correctivo de maquinaria industrial.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICIO 3 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <img src="{% static 'img/automatizacion.jpg' %}"
+                     class="card-img-top"
+                     style="height:250px;
+                            object-fit:cover;">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Automatización industrial
+
+                    </h5>
+
+
+                    <p class="text-muted">
+
+                        Optimización de procesos industriales mediante
+                        tecnología y control automatizado.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICIO 4 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <img src="{% static 'img/montaje.jpg' %}"
+                     class="card-img-top"
+                     style="height:250px;
+                            object-fit:cover;">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Maniobras y montajes
+
+                    </h5>
+
+
+                    <p class="text-muted">
+
+                        Ensamble de líneas de producción,
+                        montajes y maniobras industriales.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICIO 5 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <img src="{% static 'img/obra.jpg' %}"
+                     class="card-img-top"
+                     style="height:250px;
+                            object-fit:cover;">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Obra civil
+
+                    </h5>
+
+
+                    <p class="text-muted">
+
+                        Remodelaciones, impermeabilización,
+                        reparaciones y mantenimiento general.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICIO 6 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <img src="{% static 'img/aire.jpg' %}"
+                     class="card-img-top"
+                     style="height:250px;
+                            object-fit:cover;">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Aires acondicionados
+
+                    </h5>
+
+
+                    <p class="text-muted">
+
+                        Mantenimiento e instalación de minisplits,
+                        chillers y manejadoras de aire.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===================================================== -->
+<!-- ESTADISTICAS -->
+<!-- ===================================================== -->
+
+<section class="container my-5">
+
+    <div class="bg-dark text-white rounded p-5">
+
+        <div class="row text-center">
+
+
+            <div class="col-md-4">
+
+                <h1 class="fw-bold">
+
+                    12+
+
+                </h1>
+
+                <p>
+
+                    Años de experiencia
+
+                </p>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <h1 class="fw-bold">
+
+                    100+
+
+                </h1>
+
+                <p>
+
+                    Servicios realizados
+
+                </p>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <h1 class="fw-bold">
+
+                    20+
+
+                </h1>
+
+                <p>
+
+                    Clientes industriales
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===================================================== -->
+<!-- CLIENTES -->
+<!-- ===================================================== -->
+
+<section id="clientes"
+         class="container my-5">
+
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+
+            Clientes principales
+
+        </h2>
+
+
+        <p class="text-muted">
+
+            Empresas que han confiado en nuestros servicios.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="row g-4">
+
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4 h-100">
+
+                <h4 class="fw-bold">
+
+                    Nestlé
+
+                </h4>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4 h-100">
+
+                <h4 class="fw-bold">
+
+                    Pfizer
+
+                </h4>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4 h-100">
+
+                <h4 class="fw-bold">
+
+                    Coca-Cola FEMSA
+
+                </h4>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4 h-100">
+
+                <h4 class="fw-bold">
+
+                    Henkel
+
+                </h4>
+
+            </div>
+
+        </div>
+
+
+
+
+         <div class="col-md-3">
+
+            <div class="card shadow border-0 text-center p-4 h-100">
+
+                <h4 class="fw-bold">
+
+                    Arabela
+
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- UBICACION -->
+<!-- ===================================================== -->
+
+<section class="container my-5">
+
+    <h2 class="fw-bold text-center mb-4">
+
+        Ubicación
+
+    </h2>
+
+
+    <div class="shadow rounded overflow-hidden">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57429.84499234946!2d-99.68379295136721!3d19.287085099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b003afd0a47%3A0xf992bc6481e5c957!2sSTEP%20SERVICIOS%20TECNICOS!5e1!3m2!1ses-419!2smx!4v1778437415771!5m2!1ses-419!2smx"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+
+    </div>
+
+
+   
+
+<!-- ===================================================== -->
+<!-- CONTACTO -->
+<!-- ===================================================== -->
+
+<section id="contacto"
+         class="container my-5 py-5">
+
+    <div class="row g-5 align-items-center">
+
+
+        <!-- CONTACTO RAPIDO -->
+
+        <div class="col-md-6">
+
+            <h2 class="fw-bold mb-4">
+
+                Contáctanos
+
+            </h2>
+
+
+            <p class="text-muted mb-4">
+
+                Comunícate directamente con nuestro equipo
+                mediante WhatsApp o correo electrónico.
+
+            </p>
+
+
+
+            <!-- ICONOS CONTACTO -->
+
+            <div class="d-flex gap-4 mt-4">
+
+
+
+                <!-- WHATSAPP -->
+
+                <a href="https://wa.me/527225406683"
+                   target="_blank"
+                   class="contacto-icono whatsapp">
+
+                    <img src="{% static 'img/whatsapp-png.webp' %}"
+                         width="70">
+
+                </a>
+
+
+
+
+                <!-- CORREO -->
+
+                <a href="mailto:administracion@stepserviciostecnicos.com.mx"
+                   class="contacto-icono correo">
+
+                    <img src="{% static 'img/correo.png' %}"
+                         width="70">
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INFORMACION -->
+
+        <div class="col-md-6">
+
+            <div class="card shadow border-0 p-4 h-100">
+
+                <h3 class="fw-bold mb-4">
+
+                    Información de contacto
+
+                </h3>
+
+
+                <p class="text-muted">
+
+                    <strong>Teléfono:</strong>
+                    722 540 6683
+
+                </p>
+
+
+                <p class="text-muted">
+
+                    <strong>Correo:</strong>
+                    administracion@stepserviciostecnicos.com.mx
+
+                </p>
+
+
+                <p class="text-muted">
+
+                    <strong>Ubicación:</strong>
+                    Calle Cuauhtémoc 126,
+                    Santiago Tlacotepec,
+                    Toluca, Estado de México.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ===================================================== -->
+<!-- BOTON CHAT -->
+<!-- ===================================================== -->
+
+<div id="chat-boton">
+
+     
+
+     <img src="{% static 'img/chatbot.png' %}"
+        width="70">
+
+         
+
+
+</div>
+
+
+
+
+
+<!-- ===================================================== -->
+<!-- CHATBOT -->
+<!-- ===================================================== -->
+
+<div id="chatbot-container">
+
+
+    <!-- HEADER -->
+
+    <div class="chat-header">
+
+        <h6 class="m-0">
+
+            Chat STEP
+
+        </h6>
+
+    </div>
+
+
+
+    <!-- MENSAJES -->
+
+    <div id="chat-mensajes">
+
+        <div class="mensaje-bot">
+
+             Hola, soy el asistente virtual de STEP.
+
+            <br><br>
+
+            Preguntas disponibles:
+
+            <br><br>
+
+            • servicios
+            <br>
+            • ubicación
+            <br>
+            • teléfono
+            <br>
+            • whatsapp
+            <br>
+            • correo
+            <br>
+            • horarios
+
+        </div>
+
+    </div>
+
+
+
+    <!-- BOTONES PREGUNTAS -->
+
+    <div class="p-2 border-top border-bottom bg-light">
+
+        <button class="btn btn-sm btn-outline-primary m-1"
+                onclick="preguntaRapida('servicios')">
+
+            Servicios
+
+        </button>
+
+        <button class="btn btn-sm btn-outline-primary m-1"
+                onclick="preguntaRapida('ubicacion')">
+
+            Ubicación
+
+        </button>
+
+        <button class="btn btn-sm btn-outline-primary m-1"
+                onclick="preguntaRapida('telefono')">
+
+            Teléfono
+
+        </button>
+
+        <button class="btn btn-sm btn-outline-primary m-1"
+                onclick="preguntaRapida('correo')">
+
+            Correo
+
+        </button>
+
+    </div>
+
+
+
+    <!-- INPUT -->
+
+    <div class="chat-input-area">
+
+        <input type="text"
+               id="pregunta"
+               placeholder="Escribe una pregunta...">
+
+
+        <button onclick="responderChat()">
+
+            Enviar
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+
+
+/* ===================================================== */
+/* ABRIR Y CERRAR CHAT */
+/* ===================================================== */
+
+const botonChat = document.getElementById("chat-boton");
+
+const chatContainer = document.getElementById("chatbot-container");
+
+
+botonChat.addEventListener("click", () => {
+
+    if(chatContainer.style.display === "flex"){
+
+        chatContainer.style.display = "none";
+
+    }
+
+    else{
+
+        chatContainer.style.display = "flex";
+
+    }
+
+});
+
+
+
+
+
+/* ===================================================== */
+/* BOTONES RAPIDOS */
+/* ===================================================== */
+
+function preguntaRapida(texto){
+
+    document.getElementById("pregunta").value = texto;
+
+    responderChat();
+
+}
+
+
+
+
+
+/* ===================================================== */
+/* RESPUESTAS */
+/* ===================================================== */
+
+function responderChat(){
+
+
+    let pregunta = document
+                    .getElementById("pregunta")
+                    .value
+                    .toLowerCase();
+
+    let respuesta = "";
+
+
+
+    if(pregunta.includes("servicios")){
+
+        respuesta = `
+         Servicios disponibles:
+
+        <br><br>
+
+        • Instalaciones eléctricas
+        <br>
+        • Automatización industrial
+        <br>
+        • Mantenimiento industrial
+        <br>
+        • Obra civil
+        <br>
+        • Aires acondicionados
+        `;
+
+    }
+
+
+
+    else if(
+        pregunta.includes("ubicacion")
+        || pregunta.includes("donde")
+    ){
+
+        respuesta = `
+         Nos ubicamos en:
+
+        <br><br>
+
+        Toluca, Estado de México.
+        `;
+
+    }
+
+
+
+    else if(
+        pregunta.includes("telefono")
+        || pregunta.includes("contacto")
+    ){
+
+        respuesta = `
+         Teléfono:
+
+        <br><br>
+
+        722 540 6683
+        `;
+
+    }
+
+
+
+    else if(
+        pregunta.includes("correo")
+        || pregunta.includes("email")
+    ){
+
+        respuesta = `
+         Correo:
+
+        <br><br>
+
+        administracion@stepserviciostecnicos.com.mx
+        `;
+
+    }
+
+
+
+    else if(
+        pregunta.includes("whatsapp")
+        || pregunta.includes("wats")
+    ){
+
+        respuesta = `
+         WhatsApp:
+
+        <br><br>
+
+        722 540 6683
+        `;
+
+    }
+
+
+
+    else if(
+        pregunta.includes("horario")
+        || pregunta.includes("horarios")
+    ){
+
+        respuesta = `
+         Horario de atención:
+
+        <br><br>
+
+        Lunes a Viernes
+        <br>
+        8:00 AM - 6:00 PM
+        `;
+
+    }
+
+
+
+    else{
+
+        respuesta = `
+         Lo siento, no entendí tu pregunta.
+
+        <br><br>
+
+        Intenta con:
+        <br>
+        • servicios
+        <br>
+        • ubicación
+        <br>
+        • teléfono
+        <br>
+        • correo
+        `;
+
+    }
+
+
+
+    let areaMensajes = document.getElementById("chat-mensajes");
+
+
+
+    areaMensajes.innerHTML += `
+
+        <div class="mensaje-bot">
+
+            ${respuesta}
+
+        </div>
+
+    `;
+
+
+
+    document.getElementById("pregunta").value = "";
+
+
+    areaMensajes.scrollTop =
+    areaMensajes.scrollHeight;
+
+}
+
+</script>
+{% endblock %}

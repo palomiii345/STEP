@@ -1,0 +1,750 @@
+/* ================================================= */
+/* CONFIGURACION GENERAL */
+/* ================================================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================================= */
+/* IMAGENES DEL CARRUSEL */
+/* ================================================= */
+
+.carousel-img{
+
+    height: 450px;
+
+    width: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    filter: brightness(60%);
+
+}
+
+/* ================================================= */
+/* TARJETAS */
+/* ================================================= */
+
+.card{
+
+    transition: all 0.4s ease;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+}
+
+
+
+/* Hover de tarjetas */
+
+.card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+
+    border: 1px solid #0d6efd;
+
+}
+
+
+
+/* Imagen dentro de tarjetas */
+
+.card img{
+
+    transition: 0.4s;
+
+}
+
+
+
+/* Zoom ligero */
+
+.card:hover img{
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* ================================================= */
+/* BOTONES */
+/* ================================================= */
+
+.btn{
+
+    transition: all 0.3s ease;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* Hover botones */
+
+.btn:hover{
+
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 15px rgba(10, 10, 10, 0.5);
+
+}
+
+
+
+/* ================================================= */
+/* NAVBAR */
+/* ================================================= */
+
+.navbar{
+
+    background: linear-gradient(
+        90deg,
+        #11204a 0%,
+        #07142f 40%,
+        #020617 100%
+    );
+
+}
+
+
+
+/* Links navbar */
+
+.nav-link{
+
+    position: relative;
+
+    transition: 0.3s;
+
+}
+
+
+
+/* Línea animada debajo */
+
+.nav-link::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0%;
+
+    height: 2px;
+
+    background: #0d6efd;
+
+    transition: 0.4s;
+
+}
+
+
+
+/* Animación línea */
+
+.nav-link:hover::after{
+
+    width: 100%;
+
+}
+
+
+
+/* Cambio color */
+
+.nav-link:hover{
+
+    color: #0d6efd !important;
+
+}
+
+
+
+/* ================================================= */
+/* CAROUSEL */
+/* ================================================= */
+
+.carousel-item img{
+
+    transition: 8s;
+
+}
+
+
+
+/* Zoom automático suave */
+
+.carousel-item.active img{
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* ================================================= */
+/* TITULOS */
+/* ================================================= */
+
+h1, h2, h3, h4, h5{
+
+    letter-spacing: 1px;
+
+}
+
+footer{
+
+    background-color: #35548B !important;
+
+}
+
+/* ================================================= */
+/* SECCION ESTADISTICAS */
+/* ================================================= */
+
+.bg-dark{
+
+    transition: 0.4s;
+
+}
+
+
+
+/* Hover estadísticas */
+
+.bg-dark:hover{
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+
+
+}
+
+
+/* ================================================= */
+/* BOTONES */
+/* ================================================= */
+
+.btn-primary{
+
+    background-color: #35548B;
+
+    border-color: #35548B;
+
+}
+
+
+
+/* Hover botones */
+
+.btn-primary:hover{
+
+    background-color: #2B4570;
+
+    border-color: #2B4570;
+
+}
+/* ================================================= */
+/* BIENVENIDA STEP */
+/* ================================================= */
+
+body{
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* FONDO */
+
+.fondo-bienvenida{
+
+    background:
+    radial-gradient(
+        circle at center,
+        #11204a 0%,
+        #07142f 40%,
+        #020617 100%
+    );
+
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+
+
+/* CONTENEDOR */
+
+.contenedor-step{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    animation: aparecer 2s ease;
+}
+
+
+
+/* LOGO */
+
+.logo-step{
+
+    width: 320px;
+
+    opacity: 0;
+
+    animation:
+    entradaLogo 2s ease forwards,
+    flotar 5s ease-in-out infinite;
+
+    filter:
+    drop-shadow(
+        0px 0px 25px
+        rgba(255,255,255,0.15)
+    );
+}
+
+
+
+/* BOTON */
+
+.boton-step{
+
+    background:
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6
+    );
+
+    color: white;
+
+    padding: 15px 60px;
+
+    border-radius: 50px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border: none;
+
+    transition: 0.4s;
+
+    opacity: 0;
+
+    animation:
+    aparecerBoton 2s ease forwards;
+
+    animation-delay: 1.5s;
+
+    box-shadow:
+    0px 0px 20px
+    rgba(37,99,235,0.4);
+}
+
+
+
+/* HOVER BOTON */
+
+.boton-step:hover{
+
+    transform: scale(1.08);
+
+    background:
+    linear-gradient(
+        90deg,
+        #3b82f6,
+        #60a5fa
+    );
+
+    color: white;
+
+    box-shadow:
+    0px 0px 30px
+    rgba(59,130,246,0.7);
+}
+
+
+
+/* ANIMACION LOGO */
+
+@keyframes entradaLogo{
+
+    0%{
+
+        opacity: 0;
+
+        transform:
+        scale(0.3)
+        rotate(-8deg);
+
+    }
+
+    100%{
+
+        opacity: 1;
+
+        transform:
+        scale(1)
+        rotate(0deg);
+
+    }
+
+}
+
+
+
+/* EFECTO FLOTANTE */
+
+@keyframes flotar{
+
+    0%{
+
+        transform: translateY(0px);
+
+    }
+
+    50%{
+
+        transform: translateY(-12px);
+
+    }
+
+    100%{
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+
+
+/* APARECER */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity: 0;
+
+    }
+
+    to{
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+/* BOTON */
+
+@keyframes aparecerBoton{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+
+/* ===================================================== */
+/* BOTON FLOTANTE CHAT */
+/* ===================================================== */
+
+#chat-boton{
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 65px;
+    height: 65px;
+
+    background: #2f4059;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 28px;
+
+    cursor: pointer;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+
+    z-index: 9999;
+
+    transition: 0.3s;
+
+}
+
+
+#chat-boton:hover{
+
+    transform: scale(1.1);
+
+}
+
+
+
+
+/* ===================================================== */
+/* CONTENEDOR CHAT */
+/* ===================================================== */
+
+#chatbot-container{
+
+    position: fixed;
+
+    bottom: 95px;
+    right: 20px;
+
+    width: 320px;
+    height: 430px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+
+    display: none;
+
+    flex-direction: column;
+
+    z-index: 9999;
+
+}
+
+
+
+
+/* ===================================================== */
+/* HEADER CHAT */
+/* ===================================================== */
+
+.chat-header{
+
+    background: #212529;
+
+    color: white;
+
+    padding: 15px;
+
+}
+
+
+
+
+/* ===================================================== */
+/* MENSAJES */
+/* ===================================================== */
+
+#chat-mensajes{
+
+    flex: 1;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+    background: #f8f9fa;
+
+}
+
+
+
+.mensaje-bot{
+
+    background: #e9ecef;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+}
+
+
+
+
+/* ===================================================== */
+/* INPUT */
+/* ===================================================== */
+
+.chat-input-area{
+
+    display: flex;
+
+    border-top: 1px solid #ddd;
+
+}
+
+
+
+.chat-input-area input{
+
+    flex: 1;
+
+    border: none;
+
+    padding: 12px;
+
+    outline: none;
+
+}
+
+
+
+.chat-input-area button{
+
+    border: none;
+
+    background: #0d6efd;
+
+    color: white;
+
+    padding: 0px 20px;
+
+}
+
+/* ================================================= */
+/* ICONOS CONTACTO */
+/* ================================================= */
+
+.contacto-icono{
+
+    width: 90px;
+    height: 90px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+
+    text-decoration: none;
+
+}
+
+
+.contacto-icono:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+
+}
+/* ================================================= */
+/* SECCION NOSOTROS */
+/* ================================================= */
+
+.imagen-nosotros{
+
+    width: 100%;
+
+    max-width: 370px;
+
+    border-radius: 20px;
+
+    transition: 0.4s;
+
+}
+
+
+
+/* Hover elegante */
+
+.imagen-nosotros:hover{
+
+    transform: scale(1.02);
+
+}
+
+
+
+/* TITULO */
+
+.titulo-seccion{
+
+    color: #1E3A5F;
+
+    font-size: 3rem;
+
+}
+
+
+
+/* TEXOS */
+
+.texto-nosotros{
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+}
+.nav-link{
+
+    transition: 0.3s;
+
+}
+
+.nav-link:hover{
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+
+}
