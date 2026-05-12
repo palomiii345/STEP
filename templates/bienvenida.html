@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>STEP</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{% static 'css/styles.css' %}">
+
+</head>
+
+<body class="fondo-bienvenida">
+
+<section class="vh-100 d-flex justify-content-center align-items-center">
+
+    <div class="contenedor-step text-center">
+
+
+        <!-- LOGO -->
+
+        <img src="{% static 'img/logo.png' %}"
+             class="logo-step">
+
+
+        <!-- BOTON -->
+
+        <a href="/inicio/"
+           class="btn boton-step mt-4">
+
+            Entrar
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+
+
+</html>
