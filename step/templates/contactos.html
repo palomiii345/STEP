@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<section class="container my-5">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Contacto
+        </h2>
+
+    </div>
+
+    <!-- cards -->
+
+
+<!-- ===================================================== -->
+<!-- UBICACION -->
+<!-- ===================================================== -->
+
+<section class="container my-5">
+
+    <h2 class="fw-bold text-center mb-4">
+
+        Ubicación
+
+    </h2>
+
+
+    <div class="shadow rounded overflow-hidden">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57429.84499234946!2d-99.68379295136721!3d19.287085099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b003afd0a47%3A0xf992bc6481e5c957!2sSTEP%20SERVICIOS%20TECNICOS!5e1!3m2!1ses-419!2smx!4v1778437415771!5m2!1ses-419!2smx"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+
+    </div>
+
+
+   
+
+<!-- ===================================================== -->
+<!-- CONTACTO -->
+<!-- ===================================================== -->
+
+<section id="contacto"
+         class="container my-5 py-5">
+
+    <div class="row g-5 align-items-center">
+
+
+        <!-- CONTACTO RAPIDO -->
+
+        <div class="col-md-6">
+
+            <h2 class="fw-bold mb-4">
+
+                Contáctanos
+
+            </h2>
+
+
+            <p class="text-muted mb-4">
+
+                Comunícate directamente con nuestro equipo
+                mediante WhatsApp o correo electrónico.
+
+            </p>
+
+
+
+            <!-- ICONOS CONTACTO -->
+
+            <div class="d-flex gap-4 mt-4">
+
+
+
+                <!-- WHATSAPP -->
+
+                <a href="https://wa.me/527225406683"
+                   target="_blank"
+                   class="contacto-icono whatsapp">
+
+                    <img src="{% static 'img/whatsapp-png.webp' %}"
+                         width="70">
+
+                </a>
+
+
+                
+                <!-- CORREO -->
+
+                <a href="mailto:administracion@stepserviciostecnicos.com.mx"
+                   class="contacto-icono correo">
+
+                    <img src="{% static 'img/correo.png' %}"
+                         width="70">
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INFORMACION -->
+
+        <div class="col-md-6">
+
+            <div class="card shadow border-0 p-4 h-100">
+
+                <h3 class="fw-bold mb-4">
+
+                    Informacion de contacto 
+
+                </h3>
+
+
+                <p class="text-muted">
+
+                    <strong>Teléfono:</strong>
+                    722 540 6683
+
+                </p>
+
+
+                <p class="text-muted">
+
+                    <strong>Correo:</strong>
+                    administracion@stepserviciostecnicos.com.mx
+
+                </p>
+
+
+                <p class="text-muted">
+
+                    <strong>Ubicación:</strong>
+                    Calle Cuauhtémoc 126,
+                    Santiago Tlacotepec,
+                    Toluca, Estado de México.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+{% endblock %}
