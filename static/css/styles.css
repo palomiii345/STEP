@@ -1026,3 +1026,112 @@ body{
     transform: scale(1.08);
 
 }
+
+/* ================================================= */
+/* RESPONSIVE MOVIL */
+/* ================================================= */
+
+@media (max-width: 768px){
+
+    /* TEXTOS */
+
+    body{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 34px !important;
+    }
+
+    h2{
+        font-size: 28px !important;
+    }
+
+    h3{
+        font-size: 24px !important;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    /* NAVBAR */
+
+    .navbar-brand{
+        font-size: 24px;
+    }
+
+    .nav-link{
+        font-size: 18px;
+    }
+
+    /* CARRUSEL */
+
+    .carousel-img{
+        height: 70vh;
+    }
+
+    /* LOGO */
+
+    .logo-step{
+        width: 260px;
+    }
+
+    /* BOTON PRINCIPAL */
+
+    .boton-step{
+        font-size: 20px;
+        padding: 18px 50px;
+    }
+
+    /* TARJETAS */
+
+    .card{
+        margin-bottom: 20px;
+    }
+
+    .card h5{
+        font-size: 24px;
+    }
+
+    .card p{
+        font-size: 17px;
+    }
+
+    /* ICONOS */
+
+    .icono-valores{
+        font-size: 75px;
+    }
+
+    .contacto-icono{
+        width: 110px;
+        height: 110px;
+    }
+
+    /* ESTADISTICAS */
+
+    .estadisticas-box h1{
+        font-size: 42px;
+    }
+
+    .estadisticas-box p{
+        font-size: 18px;
+    }
+
+    /* CHAT */
+
+    #chatbot-container{
+        width: 92%;
+        height: 520px;
+        right: 4%;
+    }
+
+    #chat-boton{
+        width: 75px;
+        height: 75px;
+        font-size: 32px;
+    }
+
+}
