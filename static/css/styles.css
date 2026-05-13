@@ -118,15 +118,7 @@ body{
 
 
 
-/* Links navbar */
 
-.nav-link{
-
-    position: relative;
-
-    transition: 0.3s;
-
-}
 
 
 
@@ -746,5 +738,291 @@ body{
     color: #ffffff !important;
 
     transform: translateY(-2px);
+
+}
+/* ===================================================== */
+/* FLIP CARDS */
+/* ===================================================== */
+
+.flip-card {
+
+    background: transparent;
+    width: 100%;
+    height: 260px;
+    perspective: 1000px;
+
+}
+
+
+.flip-card-inner {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.flip-card:hover .flip-card-inner {
+
+    transform: rotateY(180deg);
+
+}
+
+
+/* DOS LADOS */
+
+.flip-card-front,
+.flip-card-back {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+
+/* FRENTE */
+
+.flip-card-front {
+
+    background: white;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* ATRAS */
+
+.flip-card-back {
+
+    background: #1a5087;
+    color: white;
+
+    transform: rotateY(180deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+
+/* ICONOS */
+
+.icono-valores {
+
+    font-size: 60px;
+    color: #0d6efd;
+
+}
+/* TAMAÑO PARA MISION Y VISION */
+
+.flip-card {
+
+    height: 320px;
+
+}
+
+
+/* TEXO ATRAS */
+
+.flip-card-back p {
+
+    font-size: 17px;
+    line-height: 1.6;
+
+}
+
+/* ===================================================== */
+/* PARTICULAS FONDO GLOBAL */
+/* ===================================================== */
+
+#particles-js{
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -10;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f9fafbd4,
+        #f3f6f6
+    );
+
+
+
+}
+/* ===================================================== */
+/* BODY TRANSPARENTE */
+/* ===================================================== */
+
+body{
+
+    background: transparent;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* ===================================================== */
+/* CONTENEDOR GENERAL */
+/* ===================================================== */
+
+.container{
+
+    position: relative;
+
+    z-index: 2;
+
+}
+/* ===================================================== */
+/* ESTADISTICAS */
+/* ===================================================== */
+
+.estadisticas-box{
+
+    background: rgba(20,20,25,0.92);
+
+    border-radius: 15px;
+
+    padding: 15px 5px;
+
+    box-shadow: 0px 5px 18px rgba(0,0,0,0.18);
+
+}
+
+
+
+/* ICONOS */
+
+.icono-estadisticas{
+
+    font-size: 30px;
+
+    color: #3b82f6;
+
+}
+
+
+
+/* NUMEROS */
+
+.estadisticas-box h1{
+
+    font-size: 34px;
+
+    margin: 5px 0px;
+
+    color: white;
+
+}
+
+
+
+/* TEXTO */
+
+.estadisticas-box p{
+
+    font-size: 15px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.75);
+
+}
+/* LINK ACTIVO */
+
+.nav-link.active{
+
+    color: #3b82f6 !important;
+
+    font-weight: bold;
+
+    position: relative;
+
+}
+
+
+
+/* LINEA ABAJO */
+
+.nav-link.active::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -3px;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: #3b82f6;
+
+}
+
+/* ================================================= */
+/* LOGOS CLIENTES */
+/* ================================================= */
+
+.cliente-card{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 180px;
+
+}
+
+
+.logo-cliente{
+
+    width: 140px;
+
+    height: 80px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+
+}
+
+
+/* HOVER */
+
+.logo-cliente:hover{
+
+    transform: scale(1.08);
 
 }
